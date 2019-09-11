@@ -18,7 +18,7 @@ $ echo hello
 
 Copy and paste the output below.
 ----------
-
+hello
 
 
 ==========
@@ -28,7 +28,7 @@ $ echo hello there
 
 Copy and paste the output below.
 ----------
-
+hello there
 
 
 ==========
@@ -38,7 +38,7 @@ $ echo good mornin'
 
 Copy and paste the output below.
 ----------
-
+Nothing
 
 
 ==========
@@ -56,7 +56,7 @@ $ echo "good mornin'"
 
 Copy and paste the output below.
 ----------
-
+good mornin'
 
 
 ==========
@@ -66,7 +66,7 @@ $ echo *
 
 What happens?
 ----------
-
+AMALogger20190109.log AMALogger20190308.log AMALogger20190829.log AMALogger20190903.log AMALogger20190910.log Adlm Adobe Applications Desktop Documents Downloads Hello.txt Hola Library MPLABXProjects Movies Music Pictures Public QLData Things hello ipe.properties isus mtec1002 mtech1002 mv pymel.log xgen
 
 
 ==========
@@ -74,7 +74,7 @@ What happens?
 
 Write the command that you used below:
 ----------
-
+clear
 
 
 ==========
@@ -87,7 +87,12 @@ $ curl google.com
 
 Copy and paste the output below.
 ----------
-
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
 
 
 ==========
@@ -97,7 +102,7 @@ $ curl www.google.com
 
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
 ----------
-
+<title>Google</title>
 
 
 ==========
@@ -105,15 +110,17 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 
 Write the command you used below.  Also copy and paste the output below.
 ----------
-
-
+curl -o Google.html Google.com
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   219  100   219    0     0   3910      0 --:--:-- --:--:-- --:--:--  3910 
 
 ==========
 11. Now let's download the lab file for this homework.  First, figure out what directory you're in.
 
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
-
+pwd
 
 
 ==========
@@ -121,7 +128,7 @@ Write the command you used to determine your directory.  Also, copy and paste th
 
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
-
+cd ~
 
 
 ==========
@@ -137,6 +144,23 @@ Use ls to verify that it downloaded.
 
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
+curl -o mtec1002-lab-02.zip http://foureyes.github.io/mtec1002-spring2014/labs/02/mtec1002-lab-02.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   162  100   162    0     0   4378      0 --:--:-- --:--:-- --:--:--  4378
+v120-ent-015:~ student$ ls
+AMALogger20190109.log	Google.html		hello
+AMALogger20190308.log	Hello.txt		ipe.properties
+AMALogger20190829.log	Hola			isus
+AMALogger20190903.log	Library			mtec1002
+AMALogger20190910.log	MPLABXProjects		mtec1002-lab-02.zip
+Adlm			Movies			mtech1002
+Adobe			Music			mv
+Applications		Pictures		pymel.log
+Desktop			Public			xgen
+Documents		QLData
+Downloads		Things
+v120-ent-015:~ student$ 
 
 
 
