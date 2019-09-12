@@ -121,6 +121,7 @@ curl -o Google.html Google.com
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
 pwd
+/Users/student
 
 
 ==========
