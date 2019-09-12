@@ -169,7 +169,7 @@ v120-ent-015:~ student$
 
 Write down the command that you used to uncompress the file.
 ----------
-
+unzip mtec1002-lab-02.zip 
 
 
 ==========
@@ -177,7 +177,7 @@ Write down the command that you used to uncompress the file.
 
 Copy and paste the output below.
 ----------
-
+v120-ent-015:mtec1002-lab-02 student$ 
 
 
 ==========
@@ -188,7 +188,20 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
-
+mkdir stuff
+v120-ent-015:~ student$ ls
+AMALogger20190109.log	Hello.txt		ipe.properties
+AMALogger20190308.log	Hola			isus
+AMALogger20190829.log	Library			mtec1002
+AMALogger20190903.log	MPLABXProjects		mtec1002-lab-02
+AMALogger20190910.log	Movies			mtec1002-lab-02.zip
+Adlm			Music			mtech1002
+Adobe			Pictures		mv
+Applications		Public			pymel.log
+Desktop			QLData			stuff
+Documents		Things			xgen
+Downloads		__MACOSX
+Google.html		hello
 
 
 ==========
@@ -200,7 +213,32 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
-
+AMALogger20190109.log	Google.html		hello
+AMALogger20190308.log	Hola			ipe.properties
+AMALogger20190829.log	Library			isus
+AMALogger20190903.log	MPLABXProjects		mtec1002
+AMALogger20190910.log	Movies			mtec1002-lab-02
+Adlm			Music			mtec1002-lab-02.zip
+Adobe			Pictures		mtech1002
+Applications		Public			mv
+Desktop			QLData			pymel.log
+Documents		Things			stuff
+Downloads		__MACOSX		xgen
+v120-ent-015:~ student$ echo "hi" > hello.txt
+v120-ent-015:~ student$ ls stuff/
+v120-ent-015:~ student$ ls
+AMALogger20190109.log	Hola			ipe.properties
+AMALogger20190308.log	Library			isus
+AMALogger20190829.log	MPLABXProjects		mtec1002
+AMALogger20190903.log	Movies			mtec1002-lab-02
+AMALogger20190910.log	Music			mtec1002-lab-02.zip
+Adlm			Pictures		mtech1002
+Adobe			Public			mv
+Applications		QLData			pymel.log
+Desktop			Things			stuff
+Documents		__MACOSX		xgen
+Downloads		hello
+Google.html		hello.txt
 
 
 ==========
@@ -212,17 +250,17 @@ List the files in the directory you're currently in (which should be home).
 
 Copy and paste the output below.
 ----------
-
+a stuff
 
 
 ==========
-19. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
+19.cd~.  Run the following commands exactly to create a compressed archive of the stuff folder.
 
 $ tar -cvf stuff.tar stuff
 
 Copy and paste the output below.
 ----------
-
+Skip
 
 
 ==========
@@ -230,7 +268,7 @@ Copy and paste the output below.
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
-
+Skip
 
 
 ==========
@@ -240,6 +278,18 @@ gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
+AMALogger20190109.log	Hola			ipe.properties
+AMALogger20190308.log	Library			isus
+AMALogger20190829.log	MPLABXProjects		mtec1002
+AMALogger20190903.log	Movies			mtec1002-lab-02
+AMALogger20190910.log	Music			mtec1002-lab-02.zip
+Adlm			Pictures		mtech1002
+Adobe			Public			mv
+Applications		QLData			pymel.log
+Desktop			Things			stuff
+Documents		__MACOSX		stuff.tar.gz
+Downloads		hello			xgen
+Google.html		hello.txt
 
 
 
@@ -254,7 +304,7 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-
+books		logs		stuff.tar.gz	web
 
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
@@ -263,6 +313,7 @@ $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
+books		logs		stuff		stuff.tar.gz	web
 
 
 
@@ -282,9 +333,11 @@ REMEMBER to use the -o flag and specifiy a filenmae that ends in .tar.gz
 
 Write out the commands that you used to do this.
 ----------
+curl -o Steven.tar.gz http://foureyes.github.io/mtec1002/labs/02/secret.tar.gz
 
 
 
 ==========
 26. How many files were in the archive.  What were their names?  Write out your answers below.
 ----------
+Broken Link
